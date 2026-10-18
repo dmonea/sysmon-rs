@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: taiki-e/upload-rust-binary-action@v1
         with:
-          bin: my-monitor          # must match the name in Cargo.toml
+          bin: sysmon              # must match the name in Cargo.toml
           target: ${{ matrix.target }}
           tar: unix                # .tar.gz on Linux/macOS
           zip: windows             # .zip on Windows
