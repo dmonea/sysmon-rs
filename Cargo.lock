@@ -1427,7 +1427,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "sysmon"
+name = "sysmon-rs"
 version = "0.1.0"
 dependencies = [
  "ratatui",

@@ -1,8 +1,15 @@
 [package]
-name = "sysmon"
+name = "sysmon-rs"
 version = "0.1.0"
 edition = "2024"
+description = "A terminal system monitor"
+license = "MIT"
+repository = "https://github.com/dmonea/sysmon-rs"
 
 [dependencies]
 ratatui = "0.30.2"
 sysinfo = "0.39.6"
+
+[profile.release]
+lto = true
+strip = true
