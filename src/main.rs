@@ -10,7 +10,7 @@ use ratatui::widgets::{
 use ratatui::{DefaultTerminal, Frame};
 use std::collections::VecDeque;
 use std::time::{Duration, Instant};
-use sysinfo::{Disks, MINIMUM_CPU_UPDATE_INTERVAL, Process, ProcessesToUpdate, System};
+use sysinfo::{Disks, MINIMUM_CPU_UPDATE_INTERVAL, ProcessesToUpdate, System};
 
 const TICK_RATE: Duration = Duration::from_millis(1000);
 const MUTED: Color = Color::DarkGray;
