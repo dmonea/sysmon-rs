@@ -172,7 +172,16 @@ impl App {
                 Span::styled(format!(" {desc}\t"), MUTED),
             ]
         };
-        let spans: Vec<Span> = [key("q", "quit")].into_iter().flatten().collect();
+        let spans: Vec<Span> = [
+            key("q", "quit"),
+            key("c", "sort (cpu)"),
+            key("m", "sort (mem)"),
+            key("j/↓", "scroll down"),
+            key("k/↑", "scroll up"),
+        ]
+        .into_iter()
+        .flatten()
+        .collect();
         frame.render_widget(Line::from(spans), area);
     }
 
